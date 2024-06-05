@@ -1,0 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS weather;
+CREATE TABLE IF NOT EXISTS weather.main_metrics
+(
+    city VARCHAR(50) PRIMARY KEY,
+    temperature DOUBLE PRECISION NOT NULL,
+    humidity DOUBLE PRECISION NOT NULL,
+    feel_temperature DOUBLE PRECISION NOT NULL
+);
